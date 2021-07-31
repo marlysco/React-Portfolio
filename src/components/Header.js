@@ -1,23 +1,22 @@
 import React from 'react';
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
-import About from "./About";
-
+import { useLocation, Link} from "react-router-dom"
 
 function Header() {
+const location = useLocation();
 return (
 <nav className={"navbar navbar-expand-lg navbar-light bg-light"}>
   <div className={"container-fluid"}>
     <div className={"navbar-brand"}>Marlys Clemente</div>
     <div className={"collapse navbar-collapse"} id={"navbarNavAltMarkup"}>
       <div className={"navbar-nav"}>
-        <a className={"nav-link"} onClick={()=>{return <About></About>}}>About me</a>
-        <a className={"nav-link"} onClick={()=>{return <Portfolio></Portfolio>}}>Portfolio</a>
-        <a className={"nav-link"} onClick={()=>{return <Contact></Contact>}}>Contact</a>
+        <Link className={location.pathname === '/' ? "nav-link active" : "nav-link"} to="/about">About</Link>
+        <Link className={location.pathname === '/portfolio'? "nav-link active" : "nav-link"} to="/portfolio">Portfolio</Link>
+        <Link className={location.pathname === '/contact' ? "nav-link active" : "nav-link"} to="/contact">Contact</Link>
       </div>
     </div>
   </div>
-</nav>);
+</nav>
+);
 };
 
 export default Header;
