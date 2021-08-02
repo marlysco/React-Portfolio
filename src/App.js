@@ -4,6 +4,7 @@ import './App.css'
 import Header from './components/Header'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ladylash from './assets/ladylash.JPG'
 import languagebarrier from './assets/languagebarrier.JPG'
@@ -64,6 +65,9 @@ export default function App() {
             <Route exact path='/about' component={About}/>
             <Route exact path='/portfolio'>
             <Portfolio projects={projects}/>
+            </Route>
+            <Route exact path='/contact'>
+            <Contact />
             </Route>
             <Footer/>
         </div>

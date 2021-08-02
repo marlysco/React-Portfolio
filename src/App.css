@@ -43,12 +43,24 @@
 .font {
   font-family: monospace;
 }
+.font-smaller {
+  font-size: 30px;
+}
 .portfolio {
+  align-content: center;
   font-family: monospace;
   font-size:25px;
   margin-top:25px;
+  margin-left: 10.1%;
+  
 }
 
+.project-container {
+  border-color:rgb(193, 198, 204);
+  border-style:solid;
+  margin: 10px;
+  border-radius: 5%;
+}
 .small {
   font-size:15px;
   margin-bottom: 10px;;

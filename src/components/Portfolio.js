@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function Portfolio(props) {
         return (
-            <div className='container row col-12 portfolio'>
+            <div className='container row col-12 portfolio center'>
             {props.projects.map((project) => {
             return (
-            <div className="col-3 d-none d-lg-block" key={project.id}>
+            <div className="project-container col-3 d-none d-lg-block" key={project.id}>
             <div><strong>{project.name}:</strong></div>
             <div className="small">{project.description}</div>
             <img href={project.link} alt={project.name} src={project.picture}  className='img-thumbnail card-imag-top'/>
