@@ -1,6 +1,6 @@
 import React from 'react';
 import mco from '../assets/mco.jpg';
-import Footer from '../components/Footer'
+
 
 function About() {
  return (
@@ -20,9 +20,7 @@ function About() {
           </div>
         </div>
        </main>
-       <Footer/>
-     </div>
-    
+     </div>  
  )
 }
 
