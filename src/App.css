@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.myname {
+  font-size: 30px;
+}
+.font {
+  font-family: monospace;
+}
+.portfolio {
+  font-family: monospace;
+  font-size:25px;
+  margin-top:25px;
+}
+
+.small {
+  font-size:15px;
+  margin-bottom: 10px;;
+}

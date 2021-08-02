@@ -5,7 +5,7 @@ import mco from '../assets/mco.jpg';
 function About() {
  return (
      <div>
-     <main className={"container-fluid"}>
+     <main className={"container-fluid font"}>
         <div className={"row col-12 p-4 p-md-5 mb-4 text-dark rounded"}>
           <div className={"col-3"}>
               <img alt= "Marlys Clemente" className={"img-fluid rounded-circle img-thumbnail"} src={mco} width="370" height="370"/>

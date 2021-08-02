@@ -61,13 +61,13 @@ export default function App() {
         <div>
             <Header/>
             <Route exact path='/' component={About}/>
+            <Route exact path='/about' component={About}/>
             <Route exact path='/portfolio'>
             <Portfolio projects={projects}/>
             </Route>
             <Footer/>
         </div>
-    </Router>
-    
+    </Router>   
 )
 }
 
