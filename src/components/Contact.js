@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-export default function Contact(props) {
+export default function Contact() {
 
     const [fullName, setFullName] = useState("");
     const [email, setEmail] = useState("");
@@ -17,9 +17,9 @@ export default function Contact(props) {
     const [messageErrorMsg, setMessageErrorMsg] = useState("");
 
 
-    handleInputChange = (event) => {
+    const handleInputChange = (event) => {
         const inputValue = event.target.value;
-        const inputName = event.taget.name;
+        const inputName = event.target.name;
         //Checking which variable changed and validating the data from the user
         switch (inputName) {
             case "fullName":
@@ -50,7 +50,7 @@ export default function Contact(props) {
         if(!emailError && !messageError && !fullNameError) inputError(false);
     }
    
-    handleFormSubmit = (event) => {
+    const handleFormSubmit = (event) => {
      event.preventDefault();
      if (setFullName && setEmail && setMessage) {
          //Show a message to the sender
