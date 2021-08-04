@@ -27,12 +27,12 @@ export default function Contact() {
                 setFullNameErrorMsg ("Please enter your full name")
                 } else {
                 setFullNameError(false);
-                setFullName=inputValue;  
+                setFullName(inputValue);  
                 }    
             break;
             case "email":
                 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputValue)) {
-                setEmail=inputValue;
+                setEmail(inputValue);
                 setEmailError(false);
                 } else {
                 setEmailErrorMsg("Please enter a valid email address")
@@ -43,7 +43,7 @@ export default function Contact() {
                     setMessageErrorMsg ("Please enter your a message")
                     } else {
                     setMessageError(false);
-                    setMessage=inputValue;  
+                    setMessage(inputValue);  
                     }
             break;
         }
