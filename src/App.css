@@ -66,7 +66,22 @@
 }
 
 .icon {
- margin-left: 50px;
+ margin-left: 25px;;
  size: 35px;
 }
 
+.connect {
+  margin-left: -1%;
+  margin-top:50px;
+}
+.margin {
+  margin-left: 35%;
+}
+
+.margin-icon {
+  margin-left: 48%
+}
+
+.footer {
+  margin-bottom: -850px;
+}

@@ -65,29 +65,35 @@ export default function Contact() {
     }
 
     return (
-        <section>
-        <div>{userMessage}</div>
-        <form>
-        <div className="mb-3">
-          <label for="fullName" className="form-label">Your name!</label>
+        <div>
+        <div>
+        <h1 className="connect font text-center text-warning">Let's connect!</h1>
+        <h1><i class="margin-icon far fa-comment-alt icon"></i></h1>
+        </div>
+        <section className="margin">
+        <div className="font text-center">{userMessage}</div> 
+        <form className="col-12 text-center font">
+        <div className="mb-3 col-5 text-center">
+          <label for="fullName" className="form-label"></label>
           {/* The value property comes/goes to the state variable */}
           <input type="text" className="form-control" id="fullName" name="fullName" placeholder="Full Name" onChange={handleInputChange} value={fullName}></input>
           <p>{fullNameErrorMsg}</p>
         </div>
-          <div className="mb-3">
-            <label for="email" className="form-label">Your email!</label>
+          <div className="mb-3 col-5 text-center">
+            <label for="email" className="form-label"></label>
             <input type="email" className="form-control" id="email" name="email" placeholder="name@example.com" onChange={handleInputChange} value={email}></input>
             <p>{emailErrorMsg}</p>
           </div>
-          <div className="mb-3">
-            <label for="message" className="form-label">Your message!</label>
-            <textarea className="form-control" id="message" name="message" rows="3" onChange={handleInputChange} value={message}></textarea>
+          <div className="mb-3 col-5 text-center">
+            <label for="message" className="form-label"></label>
+            <textarea className="form-control" id="message" name="message" rows="3" placeholder="Your message" onChange={handleInputChange} value={message}></textarea>
             <p>{messageErrorMsg}</p>
           </div>
-          <div className="mb-3">
-            <button disabled={inputError} className="btn btn-lg btn-primary" type="button" onClick={handleFormSubmit}>Send it!</button>
+          <div className="mb-3 col-5">
+            <button  disabled={inputError} className="btn btn-lg btn-warning text-dark" type="button" onClick={handleFormSubmit}>Send it!</button>
           </div>
         </form>
       </section>
+      </div>
     )  
 }
