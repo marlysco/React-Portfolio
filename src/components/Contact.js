@@ -17,7 +17,7 @@ export default function Contact() {
     const [messageErrorMsg, setMessageErrorMsg] = useState("");
 
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (event) => {
         const inputValue = event.target.value;
         const inputName = event.target.name;
         //Checking which variable changed and validating the data from the user
@@ -50,8 +50,8 @@ export default function Contact() {
         if(!emailError && !messageError && !fullNameError) inputError(false);
     }
    
-    const handleFormSubmit = (e) => {
-     e.preventDefault();
+    const handleFormSubmit = (event) => {
+     event.preventDefault();
      if (setFullName && setEmail && setMessage) {
          //Show a message to the sender
         setUserMessage(`Thank you for you message ${fullName}, you will receive a reply as soon as possible`)
@@ -81,7 +81,7 @@ export default function Contact() {
           </div>
           <div className="mb-3">
             <label for="message" className="form-label">Your message!</label>
-            <textarea className="form-control" id="message" name="message" rows="3" onChange={() => handleInputChange(e)} value={message}></textarea>
+            <textarea className="form-control" id="message" name="message" rows="3" onChange={ handleInputChange()} value={message}></textarea>
             <p>{messageErrorMsg}</p>
           </div>
           <div className="mb-3">

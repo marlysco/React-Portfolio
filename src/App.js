@@ -9,7 +9,10 @@ import Footer from './components/Footer'
 import ladylash from './assets/ladylash.JPG'
 import languagebarrier from './assets/languagebarrier.JPG'
 import workdayscheduler from "./assets/workdayscheduler.JPG"
-import readmegenerator from "./assets/readmegenerator.JPG"
+import readme from "./assets/readme.JPG";
+import employee from "./assets/employee.JPG";
+import team from "./assets/team.JPG";
+
 
 const projects = [
     { 
@@ -29,14 +32,14 @@ const projects = [
     {
         id:3,
         name: "Employee Tracker",
-        picture:"", 
+        picture: employee, 
         description: "Application for managing a company's employees",
         link: "https://github.com/marlysco/Employee-Tracker",
     },
     {
         id:6,
         name: "Team Profile Generator",
-        picture: "",
+        picture: team,
         description:"Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person",
         link: "https://github.com/marlysco/Team-Profile-Generator"
     },
@@ -50,7 +53,7 @@ const projects = [
     {
         id:5,
         name: "README generator",
-        picture: readmegenerator,
+        picture: readme,
         description: "Professional README generator app",
         link: "https://github.com/marlysco/readme-generator"
     },
