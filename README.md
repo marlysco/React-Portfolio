@@ -3,6 +3,10 @@
  ## Description:
  Professional Portfolio created using React
  This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 
+ <img src="./assets/about.jp"></img>
+ 
+ 
 
  ## Table of Contents
 - [Installation](#Installation)
