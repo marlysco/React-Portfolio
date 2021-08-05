@@ -2,6 +2,11 @@ import React from 'react';
 
 export default function Portfolio(props) {
         return (
+            <div>
+            <div>
+            <h1 className="connect font text-center text-warning">Some of my codes</h1>
+            <h1><i class="margin-icon fas fa-code icon"></i></h1>
+            </div>
             <div className='container row col-12 portfolio center'>
             {props.projects.map((project) => {
             return (
@@ -12,6 +17,7 @@ export default function Portfolio(props) {
             <a href={project.link} class="stretched-link"></a>
             </div> 
             )})}
+            </div>
             </div> 
             )
 }
