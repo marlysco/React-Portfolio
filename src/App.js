@@ -69,7 +69,7 @@ export default function App() {
             <Route exact path='/contact'>
             <Contact />
             </Route>
-            <Route exact path='/React-Portfolio' component={About}></Route>
+            <Route exact path='/React-Portfolio/' component={About}></Route>
             <Footer/>
         </div>
     </Router>   
