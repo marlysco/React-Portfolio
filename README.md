@@ -4,8 +4,9 @@
  Professional Portfolio created using React
  This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
  
- <img src="./assets/about.jp"></img>
- 
+ <img src="./src/assets/about.jpg"></img>
+ <img src="./src/assets/contact.jpg"></img>
+ <img src="./src/assets/portfolio.jpg"></img>
  
 
  ## Table of Contents
