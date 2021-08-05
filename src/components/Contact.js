@@ -22,7 +22,7 @@ export default function Contact() {
         const inputName = event.target.name;
         //Checking which variable changed and validating the data from the user
         switch (inputName) {
-            case "fullName":
+            case fullName:
                 if (inputValue.length < 7) {
                 setFullNameErrorMsg ("Please enter your full name")
                 } else {
@@ -30,7 +30,7 @@ export default function Contact() {
                 setFullName(inputValue);  
                 }    
             break;
-            case "email":
+            case email:
                 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputValue)) {
                 setEmail(inputValue);
                 setEmailError(false);
@@ -38,7 +38,7 @@ export default function Contact() {
                 setEmailErrorMsg("Please enter a valid email address")
                 }
             break;
-            case "message":
+            case message:
                 if (inputValue.length < 15) {
                     setMessageErrorMsg ("Please enter your a message")
                     } else {
@@ -71,21 +71,21 @@ export default function Contact() {
         <div className="mb-3">
           <label for="fullName" className="form-label">Your name!</label>
           {/* The value property comes/goes to the state variable */}
-          <input type="text" className="form-control" id="fullName" name="fullName" placeholder="Full Name" onChange={handleInputChange()} value={fullName}></input>
+          <input type="text" className="form-control" id="fullName" name="fullName" placeholder="Full Name" onChange={handleInputChange} value={fullName}></input>
           <p>{fullNameErrorMsg}</p>
         </div>
           <div className="mb-3">
             <label for="email" className="form-label">Your email!</label>
-            <input type="email" className="form-control" id="email" name="email" placeholder="name@example.com" onChange={handleInputChange()} value={email}></input>
+            <input type="email" className="form-control" id="email" name="email" placeholder="name@example.com" onChange={handleInputChange} value={email}></input>
             <p>{emailErrorMsg}</p>
           </div>
           <div className="mb-3">
             <label for="message" className="form-label">Your message!</label>
-            <textarea className="form-control" id="message" name="message" rows="3" onChange={ handleInputChange()} value={message}></textarea>
+            <textarea className="form-control" id="message" name="message" rows="3" onChange={handleInputChange} value={message}></textarea>
             <p>{messageErrorMsg}</p>
           </div>
           <div className="mb-3">
-            <button disabled={inputError} className="btn btn-lg btn-primary" type="button" onClick={handleFormSubmit()}>Send it!</button>
+            <button disabled={inputError} className="btn btn-lg btn-primary" type="button" onClick={handleFormSubmit}>Send it!</button>
           </div>
         </form>
       </section>
